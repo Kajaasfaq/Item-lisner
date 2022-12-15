@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn js DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+   <div id="respond">
+        <div class="container1">
+        <h1 id="header-titles"> Item Lister <span style="display: none;">123</span></h1>
+    </div>
+    <div id="search1">
+        <input type="text" name="form-control1" id="filter" placeholder="         Search Item">
+    </div>
+</div>
+    </header>
+    <div class="body">
+        <div id="main" class="card card-body">
+            <img class="mode" id="dark-mode" src="dark-mode.jpg.png" alt="dark-mode" type="button">
+        <div class="fordark">
+            <h2 id="title" class="title">Add Items</h2>
+            <form class="form-controlmr-3">
+                 <input type="text" class="form-controlmr-2" placeholder="hello type here" > <!-- value="fuck you" -->
+                 <select name="select" style="height: 23px; border-radius: 5px; border: 2px solid black;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                 </select>
+                 <input type="submit" class="btnbtn-dark" name="submit">
+            </form>
+            <h2 id="title" class="title" >Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">item1 <button id="red1">X</button></li>
+                <li class="list-group-item">item2 <button id="red1">X</button></li>
+                <li class="list-group-item">item3 <button id="red1">X</button></li>
+                <li class="list-group-item">item4 <button id="red1">X</button></li>
+            </ul>
+            <br>
+            <button class="button1" id="button2">Click Me</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="dom.js"></script>
+    <script src="dark.js"></script>
+    
+</body>
+</html> 
