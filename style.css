@@ -26,6 +26,7 @@
     margin-top: 20px;
     margin-left: 30px;
     height: 500px;
+    overflow:auto;
     width: 80%;
     position: absolute;
 }
@@ -111,7 +112,7 @@ ul li{
     left: 400px;
 }
 
-#red1{
+.red1{
     background-color: red;
     border: 1px red;
     position: absolute;
@@ -176,11 +177,13 @@ ul li{
         top: 10px;
         width: 30%;
     } 
-    #red1{
+    .red1{
         position: sticky;
         left: 900px;
     }
-   
+    #dark-mode{
+        left: 90%;
+     }
 }
 
 @media only screen and (max-width:300px){
@@ -202,7 +205,7 @@ ul li{
      #button2{
         width: 70%;
      } 
-     #red1{
+     .red1{
         position: sticky;
         left:20%;
     }
@@ -224,8 +227,11 @@ ul li{
      #button2{
         width: 80%;
     }
-    #red1{
+    .red1{
         position:sticky;
         left: 900px;
     }
+    #dark-mode{
+        left: 90%;
+     }
 }
