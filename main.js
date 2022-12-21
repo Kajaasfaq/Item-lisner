@@ -18,7 +18,7 @@ function addItem(e){
  //get input value
  var newItem = document.getElementById('item');
 
-// create new li element 
+// create html new li element 
 var li = document.createElement('li')
 
 
@@ -49,10 +49,10 @@ newItem.value ="";
 
 // delete item
 function deleteItem(e){
-    if(e.target.classList.contains('red1')) {
+    if(e.target.classList.contains('red1')) { 
         if(confirm('Are You Sure?')) {
-            var li = e.target.parentElement;
-            itemList.removeChild(li);
+            var li = e.target.parentElement; // button parent element is li
+            itemList.removeChild(li); //itemlist is ul
         }
     }
 }
@@ -62,7 +62,7 @@ function filterItems(e){
 
     // covert text to lowercase
     var text = e.target.value.toLowerCase();
-    //get lis
+    //get item list 
     var items = itemList.getElementsByTagName('li');
     //convert to an array 
     Array.from(items).forEach(function(item) {
